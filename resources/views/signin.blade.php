@@ -1,9 +1,15 @@
 @extends("layouts.login")
 
-@section("header")
-    <h1>Shopping App</h1>
+@section("title")
+    Login
 @endsection
 
+
 @section("content")
-    <button >Sign in</button>
+    <header>
+        <h1>Shopping App</h1>
+    </header>
+    <main>
+        <button >Sign in</button>
+    </main>
 @endsection

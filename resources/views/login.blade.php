@@ -1,5 +1,9 @@
 @extends("layouts.main")
 
+@section("title")
+    Login
+@endsection
+
 @section("content")
     <header><h1>Welcome Back!</h1></header>
     <main>
