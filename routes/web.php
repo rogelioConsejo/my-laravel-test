@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProductListController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
@@ -26,9 +27,8 @@ Route::post('/login', [LoginController::class, 'index']);
 Route::get('/products', [ProductListController::class, 'index']);
 Route::post('/products', [ProductListController::class, 'index']);
 
-Route::get('/product', function () {
-    return view('product');
-});
+Route::get('/product', [ProductController::class, 'index']);
+Route::post('/product', [ProductController::class, 'index']);
 
 Route::get('/cart', [CartController::class,'index']);
 Route::post('/cart', [CartController::class,'index']);

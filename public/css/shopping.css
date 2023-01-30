@@ -204,3 +204,26 @@
 .shopping-Footer_List_Item{
     display: inline-block;
 }
+
+.shopping-ProductDetail{
+    width: 80%;
+    margin: auto;
+}
+
+.shopping-ProductDetail_Image{
+    max-height: 40vh;
+    max-width: 80%;
+    margin: auto;
+}
+
+.shopping-ProductDetail_Title{
+    color: green;
+}
+
+.shopping-ProductDetail_Price{
+    color: green;
+}
+
+.shopping-ProductDetail_Label{
+    color: green;
+}

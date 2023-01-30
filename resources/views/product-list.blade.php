@@ -9,7 +9,7 @@
         @foreach ($products as $product)
             <li class="shopping-Products_Product">
                 <img src="{{$product->image}}" alt="" class="shopping-Products_Product_Image">
-                <p class="shopping-Products_Product_Title"><a href="" class="shopping-Products_Product_Title_Link">{{$product->title}}</a></p>
+                <p class="shopping-Products_Product_Title"><a href="{{url('/product?id='.$product->id)}}" class="shopping-Products_Product_Title_Link">{{$product->title}}</a></p>
                 <form action="" method="post" class="shopping-Products_Product_AddToCart">
                     @csrf
                     <button class="shopping-Button" type="submit" name="product" value="{{$product->id}}">Add To Cart</button>
