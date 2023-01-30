@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProductListController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 /*
@@ -20,9 +21,8 @@ Route::get('/signin', function () {
 Route::get('/login', [LoginController::class, 'index']);
 Route::post('/login', [LoginController::class, 'index']);
 
-Route::get('/products', function () {
-    return view('product-list');
-});
+
+Route::get('/products', [ProductListController::class, 'index']);
 
 Route::get('/product', function () {
     return view('product');
