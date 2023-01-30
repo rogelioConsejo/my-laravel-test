@@ -31,6 +31,7 @@ Route::get('/product', function () {
 });
 
 Route::get('/cart', [CartController::class,'index']);
+Route::post('/cart', [CartController::class,'index']);
 
 Route::get('/categories', function () {
     return view('category-list');

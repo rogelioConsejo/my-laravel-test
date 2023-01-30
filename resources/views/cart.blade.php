@@ -5,7 +5,9 @@
 @endsection
 
 @section("content")
-    <form class="shopping-Cart">
+    <h1>Your Cart</h1>
+    <p>{{$products_amount}}</p>
+    <form class="shopping-Cart" method="post">
         <ul class="shopping-Cart_Items">
             @foreach ($products as $product)
                 <li class="shopping-Cart_Product">
@@ -16,8 +18,9 @@
             @endforeach
         </ul>
         <div class="shopping-Cart_Buttons">
-            <p>Total ${{$total}}</p><button class="shopping-Cart_Buttons_Button">Clear Cart</button>
+            <p>{{$total}}</p><button class="shopping-Cart_Buttons_Button" type="submit" name="clear" value="clear">Clear Cart</button>
             <button CLASS="shopping-Cart_Buttons_Checkout shopping-Cart_Buttons_Button">Checkout</button>
+            @csrf
         </div>
     </form>
 @endsection
