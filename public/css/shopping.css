@@ -59,7 +59,11 @@
     border: solid gray 1px;
 }
 
+
 .shopping-Cart{
+    padding-bottom: 4em;
+}
+.shopping-Cart_Items{
     width: 80%;
     margin: auto;
 }
@@ -77,6 +81,26 @@
 
 .shopping-Cart_Product_Price{
     grid-column: 2;
+}
+
+.shopping-Cart_Buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 1em;
+    grid-column-gap: 10px;
+}
+
+.shopping-Cart_Buttons_Button{
+    background-color: green;
+    color: white;
+    font-size: 24px;
+    padding: .5em;
+    border: none;
+    border-radius: 10px;
+}
+
+.shopping-Cart_Buttons_Checkout{
+    grid-column: span 2;
 }
 
 .shopping-Header {

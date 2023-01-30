@@ -19,7 +19,10 @@ class CartController extends Controller
             $_SESSION["cart"] = [];
             $cart_products = [];
         }
-
-        return view('cart', ['products' => $cart_products]);
+        $total = 0;
+        foreach ($cart_products as $product){
+            $total += $product["price"];
+        }
+        return view('cart', ['products' => $cart_products, 'total' => $total]);
     }
 }
