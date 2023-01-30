@@ -186,6 +186,16 @@
     background-color: white;
 }
 
+.shopping-Header_UserMenu_LogOut{
+    position: absolute;
+    right: 0;
+    top: 6em;
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 1em;
+}
+
 .shopping-Footer{
     height: 3em;
     background-color: green;
@@ -229,3 +239,4 @@
 .shopping-ProductDetail_Label{
     color: green;
 }
+

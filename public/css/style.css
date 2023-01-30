@@ -21,6 +21,10 @@ body{
     .main-LoginForm_Button{
         grid-row: 6;
     }
+
+    .shopping-Header_UserMenu{
+        width: 40px;
+    }
 }
 
 @media (max-width: 520px) {

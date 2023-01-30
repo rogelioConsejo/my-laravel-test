@@ -20,10 +20,13 @@
                 </li>
                 <li class="shopping-Header_Nav_List_Item">Shopping App</li>
                 <li class="shopping-Header_Nav_List_Item shopping-Header_Search"></li>
-                <li class="shopping-Header_Nav_List_Item shopping-Header_UserMenu">
+                <li class="shopping-Header_Nav_List_Item shopping-Header_UserMenu" onclick="toggleMenu()">
                     <div class="shopping-Header_UserMenu_Dot"></div>
                     <div class="shopping-Header_UserMenu_Dot"></div>
                     <div class="shopping-Header_UserMenu_Dot"></div>
+                    <form action="{{url('/logout')}}" >
+                        <button class="shopping-Header_UserMenu_LogOut" id="logOutButton" hidden>Log Out</button>
+                    </form>
                 </li>
             </ul></nav>
     </header>
@@ -39,5 +42,18 @@
         </nav>
     </footer>
 </div>
+<script>
+    let isShown = false;
+    const logOutButton = document.getElementById("logOutButton");
+    function toggleMenu() {
+        newShownState = !isShown;
+        if (newShownState){
+            logOutButton.hidden = false;
+        } else {
+            logOutButton.hidden = true;
+        }
+        isShown = newShownState;
+    }
+</script>
 </body>
 </html>

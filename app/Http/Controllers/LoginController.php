@@ -19,4 +19,11 @@ class LoginController extends Controller
             return view('login');
         }
     }
+
+    public function logout(){
+        session_start();
+        unset($_SESSION["username"]);
+        unset($_SESSION["password"]);
+        return redirect('/login');
+    }
 }
