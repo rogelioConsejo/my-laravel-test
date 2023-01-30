@@ -59,8 +59,22 @@
     border: solid gray 1px;
 }
 
-
 .shopping-Cart{
+    width: 80%;
+    margin: auto;
+}
+
+.shopping-Cart_Title{
+    color: green;
+}
+
+.shopping-Cart_Total{
+    color: green;
+    text-align: center;
+    font-size: 125%;
+}
+
+.shopping-Cart_Form{
     padding-bottom: 4em;
 }
 .shopping-Cart_Items{
@@ -93,8 +107,7 @@
 }
 
 .shopping-Cart_Buttons_Button{
-    background-color: green;
-    color: white;
+
     font-size: 24px;
     padding: .5em;
     border: none;
@@ -102,9 +115,16 @@
 }
 
 .shopping-Cart_Buttons_Checkout{
+    background-color: green;
+    color: white;
     grid-column: span 2;
     width: 80%;
     margin: auto;
+}
+
+.shopping-Cart_Buttons_Clear{
+    background-color: pink;
+    color: darkred;
 }
 
 .shopping-Header {
