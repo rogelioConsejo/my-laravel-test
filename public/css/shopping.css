@@ -1,0 +1,79 @@
+.shopping-Content {
+    font-family: sans-serif;
+    font-size: 24px;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 10vh 80vh 10vh;
+    height: 100vh;
+    grid-row-gap: 0;
+}
+
+.shopping-Header {
+    background-color: green;
+    color: white;
+    padding: 0;
+    margin: 0;
+    height: 3em;
+    line-height: 3em;
+
+}
+
+.shopping-Header_Nav_List {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 18fr 1fr 1fr;
+    padding: 0;
+}
+
+.shopping-Header_Nav_List_Item {
+    display: inline-block;
+}
+
+.shopping-Header_HamburgerMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.shopping-Header_HamburgerMenu_Line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+.shopping-Header_Search::after {
+    content: "🔍";
+}
+
+.shopping-Header_UserMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.shopping-Header_UserMenu_Dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    margin: 3px 0;
+    background-color: white;
+}
+
+.shopping-Footer{
+    height: 100%;
+    background-color: green;
+}
+
+.shopping-Footer_List{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.shopping-Footer_List_Item{
+    display: inline-block;
+}

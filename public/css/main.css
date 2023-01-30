@@ -1,0 +1,50 @@
+.main-Content{
+    font-family: sans-serif;
+    font-size: 24px;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 20vh 80vh;
+    height: 100vh;
+    grid-row-gap: 0;
+}
+
+.main-Header{
+    background-color: green;
+    color: white;
+    padding: 0;
+    margin: 0;
+    height: 20vh;
+    line-height: 20vh;
+}
+
+.main-Header_Text{
+    margin: 0;
+    text-align: center;
+}
+
+.main-LoginForm{
+    display: flex;
+    flex-direction: column;
+    max-width: 720px;
+    margin: 2em auto;
+    position: relative;
+    height: calc(100% - 4em);
+}
+
+.main-LoginForm_Input{
+    border-radius: 7px;
+    border: none;
+    background-color: #ffe;
+    padding: 1em;
+}
+
+.main-LoginForm_Button{
+    border-radius: 7px;
+    border: none;
+    background-color: white;
+    color: green;
+    box-shadow: 0 5px 5px lightgrey;
+    padding: 1em;
+    font-weight: bolder;
+    font-size: 24px;
+}

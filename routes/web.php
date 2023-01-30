@@ -32,3 +32,7 @@ Route::get('/product', function () {
 Route::get('/cart', function () {
     return view('cart');
 });
+
+Route::get('/categories', function () {
+    return view('category-list');
+});
