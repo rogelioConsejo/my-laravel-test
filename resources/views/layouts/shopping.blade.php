@@ -33,8 +33,8 @@
     <footer class="shopping-Footer">
         <nav>
             <ul class="shopping-Footer_List">
-                <li class="shopping-Footer_List_Item">🏠</li>
-                <li class="shopping-Footer_List_Item">🛒</li>
+                <li class="shopping-Footer_List_Item"><a href="{{url('/login')}}">🏠</a></li>
+                <li class="shopping-Footer_List_Item"><a href="{{url('/cart')}}">🛒</a></li>
             </ul>
         </nav>
     </footer>

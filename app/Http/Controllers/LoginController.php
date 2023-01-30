@@ -8,10 +8,8 @@ class LoginController extends Controller
 {
     public function index(){
         session_start();
-        if (isset($_POST["username"])){
+        if (isset($_POST["username"]) && isset($_POST["password"])){
             $_SESSION["username"] = $_POST["username"];
-        }
-        if (isset($_POST["password"])){
             $_SESSION["password"] = $_POST["password"];
         }
         if(isset($_SESSION["username"]) && isset($_SESSION["password"])){
