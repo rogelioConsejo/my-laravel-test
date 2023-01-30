@@ -16,8 +16,8 @@
             @endforeach
         </ul>
         <div class="shopping-Cart_Buttons">
-            <p>Total ${{$total}}</p><button>Clear Cart</button>
-            <button CLASS="shopping-Cart_Buttons_Checkout">Checkout</button>
+            <p>Total ${{$total}}</p><button class="shopping-Cart_Buttons_Button">Clear Cart</button>
+            <button CLASS="shopping-Cart_Buttons_Checkout shopping-Cart_Buttons_Button">Checkout</button>
         </div>
     </form>
 @endsection
